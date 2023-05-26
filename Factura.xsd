@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="FACTURA">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="NUMAR" type="xs:string"/>
+                <xs:element name="DATA" type="xs:date"/>
+                <xs:element name="MAGAZIN" type="xs:string"/>
+                <xs:element name="CLIENT" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NUME" type="xs:string"/>
+                            <xs:element name="PRODUS" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="DENUMIRE" type="xs:string"/>
+                                        <xs:element name="PRET" type="xs:decimal"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

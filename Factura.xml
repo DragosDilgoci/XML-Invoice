@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE FACTURA SYSTEM "Factura.dtd">
+<FACTURA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Factura.xsd">
+  <NUMAR>292222</NUMAR>
+  <DATA>2023-03-30</DATA>
+  <MAGAZIN>eMag</MAGAZIN>
+  <CLIENT id="1">
+    <NUME>Dragos Dilgoci</NUME>
+    <PRODUS>
+      <DENUMIRE>Televizor 4K</DENUMIRE>
+      <PRET>2000</PRET>
+    </PRODUS>
+    <PRODUS>
+      <DENUMIRE>Frigider cu lada frigorifica</DENUMIRE>
+      <PRET>2500</PRET>
+    </PRODUS>
+  </CLIENT>
+  <CLIENT id="2">
+    <NUME>Andrei Constantinescu</NUME>
+    <PRODUS>
+      <DENUMIRE>Masina de spalat vase</DENUMIRE>
+      <PRET>2300</PRET>
+    </PRODUS>
+    <PRODUS>
+      <DENUMIRE>Aragaz si cuptor electric</DENUMIRE>
+      <PRET>1800</PRET>
+    </PRODUS>
+  </CLIENT>
+</FACTURA>
